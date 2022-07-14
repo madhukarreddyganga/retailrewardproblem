@@ -12,7 +12,6 @@ const getTransactions = async (csvFilePath) => {
       transactionAmount: Number(transaction.transactionAmount),
     }));
   } else {
-    console.error("Invalid csvFilePath provided");
     return [];
   }
 };
